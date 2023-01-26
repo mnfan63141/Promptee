@@ -14,10 +14,10 @@ function App() {
 
   const configuration = new Configuration({
     organization: "org-vtJRcG0HChk5fChxj56c0flx",
-    apiKey: "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",
+    apiKey: import.meta.env.VITE_Open_AI_Key,
   });
 
-  console.log("apikey:" + import.meta.env.VITE_Open_AI_Key);
+
 
   const openai = new OpenAIApi(configuration);
 
