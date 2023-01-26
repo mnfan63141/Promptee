@@ -13,6 +13,7 @@ function App() {
   let [artisticStyle, setStyle] = useState("");
 
   const configuration = new Configuration({
+    organization: "org-vtJRcG0HChk5fChxj56c0flx",
     apiKey: import.meta.env.VITE_Open_AI_Key,
   });
 
