@@ -14,8 +14,10 @@ function App() {
 
   const configuration = new Configuration({
     organization: "org-vtJRcG0HChk5fChxj56c0flx",
-    apiKey: import.meta.env.VITE_Open_AI_Key,
+    apiKey: "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",
   });
+
+  console.log("apikey:" + import.meta.env.VITE_Open_AI_Key);
 
   const openai = new OpenAIApi(configuration);
 
@@ -54,7 +56,7 @@ function App() {
     setLoading(false);
   };
 
-  console.log("Is this a good prompt" + placeholder);
+  
 
   const generateImage = async () => {
     setPlaceholder(`Write your entry here`);
@@ -85,7 +87,7 @@ function App() {
         </>
       ) : (
         <>
-          <h2>Generate an Image using Open AI API</h2>
+          <h2>Enter some type of noun topic to produce ideas for how to write it and then enter artistic style desired plus your inspired writing to make art</h2>
           <textarea
             className="app-input"
             placeholder={"Enter desired topic here (noun)"}
