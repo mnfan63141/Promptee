@@ -34,6 +34,7 @@ function App() {
     );
   }
   const generatePrompt = async () => {
+    setLoading(true);
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: generateIdeas(topic),
@@ -50,6 +51,7 @@ function App() {
         Math.floor(Math.random() * response.data.choices.length)
       ].text
     );
+    setLoading(false);
   };
 
   console.log("Is this a good prompt" + placeholder);
