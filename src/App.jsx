@@ -13,7 +13,6 @@ function App() {
   let [artisticStyle, setStyle] = useState("");
 
   //const env = process.env.NODE_ENV === 'development' ? import.meta.env : process.env;
-  //add a difference
 
   const configuration = new Configuration({
     organization: "org-vtJRcG0HChk5fChxj56c0flx",
