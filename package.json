@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:env": "env-cmd -f .env.production npm run build",
+    "build:env": "env-cmd -f .env npm run build",
     "preview": "vite preview"
   },
   "dependencies": {
