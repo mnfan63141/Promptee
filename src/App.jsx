@@ -16,7 +16,7 @@ function App() {
 
   const configuration = new Configuration({
     organization: "org-vtJRcG0HChk5fChxj56c0flx",
-    apiKey: process.env.VITE_Open_AI_Key
+    apiKey: process.env.OPEN_AI_KEY
     //apiKey: import.meta.env.VITE_Open_AI_Key,
   });
 
