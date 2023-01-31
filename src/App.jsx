@@ -19,7 +19,7 @@ function App() {
 
   const configuration = new Configuration({
     organization: "org-vtJRcG0HChk5fChxj56c0flx",
-    apiKey: process.env.OPEN_AI_KEY
+    apiKey: "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"
     //apiKey: import.meta.env.VITE_Open_AI_Key,
   });
 
